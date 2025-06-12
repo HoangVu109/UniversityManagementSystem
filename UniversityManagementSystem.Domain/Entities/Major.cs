@@ -1,15 +1,14 @@
-﻿namespace UniversityManagementSystem.Domain.Entities
+﻿namespace UniversityManagementSystem.Domain.Entities;
+
+public class Major
 {
-    public class Major
-    {
-        public Guid Guid { get; set; }
+    public Guid Guid { get; set; }
 
-        public string MajorId { get; set; }
-        public string MajorName { get; set; }
+    public string MajorId { get; set; }
+    public string MajorName { get; set; }
 
-        public Guid FacultyGuid { get; set; }
-        public Faculty Faculty { get; set; }
+    public Guid FacultyGuid { get; set; }
+    public Faculty Faculty { get; set; }
 
-        public List<NominalClass> NominalClasses { get; set; }
-    }
+    public List<NominalClass> NominalClasses { get; set; }
 }

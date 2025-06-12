@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-namespace UniversityManagementSystem.Domain.Entities
+﻿namespace UniversityManagementSystem.Domain.Entities;
+
+public class Course
 {
-    public class Course
-    {
-        public Guid Guid { get; set; }
+    public Guid Guid { get; set; }
 
-        public int CourseId { get; set; }
-        public string CourseName { get; set; }
+    public int CourseId { get; set; }
+    public string CourseName { get; set; }
 
 
-        public List<CoursePrerequisite> Prerequisites { get; set; } 
-        public List<CoursePrerequisite> RequiredByCourses { get; set; }
+    public List<CoursePrerequisite> Prerequisites { get; set; } 
+    public List<CoursePrerequisite> RequiredByCourses { get; set; }
 
-        //Khoa chủ quản
-        public Guid FacultyGuid { get; set; }
-        public Faculty Faculty { get; set; }
+    //Khoa chủ quản
+    public Guid FacultyGuid { get; set; }
+    public Faculty Faculty { get; set; }
 
 
-    }
 }

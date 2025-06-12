@@ -1,8 +1,7 @@
-﻿namespace UniversityManagementSystem.Domain.Enums
+﻿namespace UniversityManagementSystem.Domain.Enums;
+
+public enum ClassType
 {
-    public enum ClassType
-    {
-        Lecture,
-        Lab,
-    }
+    Lecture,
+    Lab,
 }
